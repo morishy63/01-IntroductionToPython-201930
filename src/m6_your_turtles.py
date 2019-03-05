@@ -2,10 +2,10 @@
 Your chance to explore Loops and Turtles!
 
 Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
-         Aaron Wilkin, their colleagues, and PUT_YOUR_NAME_HERE.
+         Aaron Wilkin, their colleagues, and Yuhei Morishita.
 """
 ########################################################################
-# TODO: 1.
+# DONE: 1.
 #   On Line 5 above, replace  PUT_YOUR_NAME_HERE  with your own name.
 ########################################################################
 
@@ -28,3 +28,31 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
 #   Don't forget to COMMIT-and-PUSH when you are done with this module.
 #
 ########################################################################
+import rosegraphics as rg
+
+window = rg.TurtleWindow()
+
+purple_turtle = rg.SimpleTurtle('turtle')
+purple_turtle.pen = rg.Pen('purple', 6)
+purple_turtle.speed = 30  # Fast
+
+# The first square will be 300 x 300 pixels:
+size = 200
+
+# Do the indented code 6 times.  Each time draws a square.
+for k in range(10):
+
+    # Put the pen down, then draw a square of the given size:
+    purple_turtle.draw_square(size)
+
+    # Move a little below and to the right of where the previous
+    # square started.  Do this with the pen up (so nothing is drawn).
+    purple_turtle.pen_up()
+    purple_turtle.right(60)
+    purple_turtle.forward(10)
+    purple_turtle.left(30)
+
+    # Put the pen down again (so drawing resumes).
+    # Make the size for the NEXT square be 12 pixels smaller.
+    purple_turtle.pen_down()
+    size = size - 10
