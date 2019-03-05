@@ -10,7 +10,7 @@ Also:
   -- ASSIGNING a VALUE to a NAME (VARIABLE).
 
 Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
-         Aaron Wilkin, their colleagues, and PUT_YOUR_NAME_HERE.
+         Aaron Wilkin, their colleagues, and Yuhei.
 """
 ###############################################################################
 #
@@ -116,7 +116,7 @@ natasha.go_to(rg.Point(-100, 200))
 
 ###############################################################################
 #
-# TODO: 4.
+# DONE: 4.
 #   Add a few more lines of your own code to make one of the existing
 #   SimpleTurtles move some more and/or have different characteristics.
 #
@@ -126,6 +126,14 @@ natasha.go_to(rg.Point(-100, 200))
 #   As always, test by running the module.
 #
 ###############################################################################
+yuhei = rg.SimpleTurtle('turtle')
+yuhei.pen = rg.Pen('blue',30)
+yuhei.speed = 2
+yuhei.forward(50)
+yuhei.right(90)
+yuhei.backward(50)
+yuhei.speed = 1
+yuhei.go_to(rg.Point(-100,200))
 
 ###############################################################################
 #
@@ -153,7 +161,7 @@ natasha.go_to(rg.Point(-100, 200))
 #   As always, test by running the module.
 #
 ###############################################################################
-
+Maeda = rg.SimpleTurtle()
 ###############################################################################
 #
 # TODO: 6.
