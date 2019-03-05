@@ -10,7 +10,7 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
 ########################################################################
 
 ########################################################################
-# TODO: 2.
+# DONE: 2.
 #   You should have RUN the  m5e_loopy_turtles  module and READ its code.
 #   (Do so now if you have not already done so.)
 #
@@ -56,3 +56,16 @@ for k in range(10):
     # Make the size for the NEXT square be 12 pixels smaller.
     purple_turtle.pen_down()
     size = size - 10
+# Example 2.  It  how to speed up the animation.
+window.tracer(50)  # Bigger numbers make the animation run faster
+
+another_turtle = rg.SimpleTurtle('triangle')
+another_turtle.pen = rg.Pen('orange', 0.5)
+another_turtle.backward(100)
+
+# The name k takes on the values 0, 1, 2, ... 499 as the loop runs
+for k in range(1000):
+    another_turtle.left(121)
+    another_turtle.forward(k)
+
+window.close_on_mouse_click()
