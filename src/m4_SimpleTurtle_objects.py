@@ -137,7 +137,7 @@ yuhei.go_to(rg.Point(-100,200))
 
 ###############################################################################
 #
-# TODO: 5.
+# DONE: 5.
 #   The above code  CONSTRUCTS  two SimpleTurtle objects
 #   and gives those objects NAMES:
 #       boris    natasha
@@ -164,7 +164,7 @@ yuhei.go_to(rg.Point(-100,200))
 Maeda = rg.SimpleTurtle()
 ###############################################################################
 #
-# TODO: 6.
+# DONE: 6.
 #   Ensure that no blue bars on the scrollbar-thing to the right remain.
 #   Run one more time to be sure that all is still OK.
 #
