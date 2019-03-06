@@ -8,11 +8,36 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
 # DONE: 1.
 #   On Line 5 above, replace  PUT_YOUR_NAME_HERE  with your own name.
 ########################################################################
+import rosegraphics as rg
+window = rg.TurtleWindow()
+window.delay(20)
+
+m = rg.SimpleTurtle()
+delete = rg.SimpleTurtle()
+
+m.pen = rg.Pen('blue',30)
+delete.pen = rg.Pen('white',30)
+
+m.speed = 2
+delete.speed = 2
+
+m.right(-90)
+m.forward(200)
+delete.right(-90)
+delete.forward(200)
+m.go_to(rg.Point(100,-40))
+delete.go_to(rg.Point(100,-40))
+m.pen = rg.Pen('green',10)
+m.go_to(rg.Point(100,-190))
+
+
+window.close_on_mouse_click()
+
 
 ########################################################################
 #
-# TODO: 2.
-#   Write code that accomplishes the following (and ONLY the following),
+# DONE: 2.
+#   WritWe code that accomplishes the following (and ONLY the following),
 #   in the order listed:
 #
 #    - Constructs a SimpleTurtle with a  'blue'  Pen.
