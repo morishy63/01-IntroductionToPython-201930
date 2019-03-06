@@ -105,6 +105,7 @@ print(type(math.sin))
 print(type(print))
 print(type(math))
 print(type('math'))
+print(type(min))
 ###############################################################################
 #
 #  DONE: 6.
